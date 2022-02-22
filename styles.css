@@ -1,0 +1,10 @@
+.header {
+    background-color: rgb(223, 220, 220);
+    transition: background-color 0.5s ease 0s;
+    border: 2px black solid;
+}
+.header:hover {
+    background-color: rgb(154, 150, 150);
+}
+
+
