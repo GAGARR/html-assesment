@@ -4,13 +4,38 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+margin: 0;
+
+padding: 0;
+box-sizing: border-box;
+
+}
+section{
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+}
+
+::-webkit-scrollbar
+{
+  width: 0px;
+  background-color: black;
+}
+
+
+
+
 body {
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 47%, rgba(0,212,255,1) 100%);
+
 }
 
-.credit {
-  margin-top: 50\px;
+
+.animate__backInUp {
+  margin-top: 50px;
+
 }
 
 
@@ -108,9 +133,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 47%, rgba(
 span {
     font-size: 80px;
     position: relative;
-    top: 16px;
-    left: 29px;
-    bottom: 16px;
+  
     text-shadow: -9px -2px black;
   
 }
@@ -135,4 +158,11 @@ button {
 a {
   text-decoration: none;
   color: black;
+  margin-top: 90px;
+  font-size: 20px;
+  background-color: white;
+  font-family: 'Roboto' sans-serif;
+  text-shadow: -1px -1px;
+  font-weight: 100;
+  background-color: rgb(25, 122, 171);
 }
