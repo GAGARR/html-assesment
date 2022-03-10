@@ -1,0 +1,169 @@
+/* Roboto font import*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+margin: 0;
+
+padding: 0;
+box-sizing: border-box;
+font-family: arial;
+
+}
+section{
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+}
+
+/*stupid scrolling thing*/
+::-webkit-scrollbar
+{
+  width: 0px;
+  background-color: black;
+}
+
+
+
+/*background*/
+body {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 47%, rgba(0,212,255,1) 100%);
+
+}
+
+
+.animate__backInUp {
+  margin-top: 50px;
+
+}
+
+
+.header {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: -6px -6px rgb(0, 0, 0);    
+    -webkit-animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) ;
+	        animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) ;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: underline 3px;
+   
+
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+
+
+/*text fade in animation*/
+.fade-in-text {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    animation: fadeIn linear 4s;
+    -webkit-animation: fadeIn linear 4s;
+    -moz-animation: fadeIn linear 4s;
+    -o-animation: fadeIn linear 4s;
+    -ms-animation: fadeIn linear 4s;
+    font-size: 20px;
+    text-align: center;
+    top: 230px;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.credit {
+  position: relative;
+  top: -120px;
+  font-size: 20px;
+}
+
+.homepage {
+  margin: 100px;
+  padding: 500px;
+
+}
+
+button {
+  position: relative;
+  top: 120px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: rgb(22, 97, 158);
+  color: rgb(177, 154, 154);
+  outline: 2px black; /*does an outline even do anyhting */
+  font-family: 'Roboto', sans-serif;
+  text-shadow: -1px -1px rgb(71, 71, 71);
+}
+
+button:hover {
+  background-color: rgba(4, 69, 167, 0.658);
+  box-shadow: -4px -4px rgb(9, 91, 124);
+  outline: 2px black;
+}
+
+
+.tooltip {
+  cursor:not-allowed;
+}
